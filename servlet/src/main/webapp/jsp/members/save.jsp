@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page import="hello.servlet.domain.member.Member" %>
-<%@ page import="hello.servlet.domain.member.MemberRepository" %><
+<%@ page import="hello.servlet.domain.member.MemberRepository" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     //request, response 사용 가능
@@ -14,7 +14,7 @@
 
     MemberRepository memberRepository = MemberRepository.getInstance();
 
-    System.out.println("save.jsp");
+    System.out.println("save-result.jsp");
     String username = request.getParameter("username");
     int age = Integer.parseInt(request.getParameter("age"));
 
